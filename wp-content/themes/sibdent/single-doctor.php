@@ -26,7 +26,7 @@
 							Опыт работы в ООО "СибДент" 
 							<?php if (get_post_meta($post->ID, 'opyt_raboty', true)) { echo get_post_meta($post->ID, 'opyt_raboty', true); } ?>
 						</span>
-						<a href="https://sibdentomsk.ru/raspisanie/" class="specialists-portfolio-wrap-block__btn btn">Записаться на прием</a>
+						<button class="modal-btn specialists-portfolio-wrap-block__btn btn">Записаться на прием</button>
 					</div><!-- /specialists-portfolio-wrap-block -->
 				</div><!-- /specialists-portfolio-block -->
 				<div class="specialists-portfolio-info">
@@ -40,7 +40,7 @@
 		<div class="clinic-license">
 			<h3 class="clinic-license__title">Сертификаты и награды</h3>
 			<div class="clinic-license__wrap">
-				<? echo do_shortcode(get_post_meta($post->ID, 'sertifikaty', true)); ?>
+				<?php echo do_shortcode(get_post_meta($post->ID, 'sertifikaty', true)); ?>
 			</div><!-- /clinic-license-wrap -->
 		</div><!-- /clinic-license -->
 		<?php endif; ?>

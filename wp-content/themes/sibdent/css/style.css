@@ -754,6 +754,10 @@ span.wpcf7-not-valid-tip {
   color: #666666;
 }
 
+.sidebar-nav {
+  margin-top: 40px;
+}
+
 .sidebar-nav .menu-item {
   list-style: none;
   margin-bottom: 15px;
@@ -2489,6 +2493,7 @@ span.wpcf7-not-valid-tip {
   background-color: #fff;
   outline: none;
   transition: all .3s;
+  width: auto !important;
 }
 
 .specialists-portfolio-wrap-block__btn:hover {
@@ -2505,12 +2510,14 @@ span.wpcf7-not-valid-tip {
   }
   .specialists-portfolio-wrap-block__btn {
     margin-top: 20px;
+    width: auto !important;
   }
 }
 
 @media (max-width: 1100px) {
   .specialists-portfolio-wrap-block__btn {
     padding: 10px 40px;
+    width: auto !important;
   }
 }
 
@@ -2597,6 +2604,7 @@ span.wpcf7-not-valid-tip {
     color: #ffffff;
     padding: 15px 12px;
     border-radius: 2px;
+    width: auto !important;
   }
   .specialists-portfolio-wrap-block__btn:hover {
     background-color: #09AF51;
@@ -3211,7 +3219,7 @@ span.wpcf7-not-valid-tip {
 }
 
 .map {
-  height: 75vh;
+  height: 35vh;
 }
 
 @media (max-width: 991px) {
@@ -3807,7 +3815,7 @@ span.wpcf7-not-valid-tip {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-btn {
-  margin: 0;
+  /*margin: 0;*/
   width: 178px;
 }
 .popup,

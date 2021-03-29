@@ -234,9 +234,9 @@ jQuery(document).ready(function($) {
 
     $('.modal-btn').click(function (event) {
         event.preventDefault();
-        //var id = $(event.currentTarget).attr('data-to-id');
+        var id = $(event.currentTarget).attr('data-to-id');
         $('.overlay-1').fadeIn(400, function () {
-            $('.popup')
+            $('#' + id + '.popup')
                 .css('display', 'block')
                 .animate({ opacity: 1, top: '0%' }, 200);
         });

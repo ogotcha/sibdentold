@@ -5,7 +5,7 @@
 	<div class="container">
 		<?php get_template_part( 'template-part/block', 'navbar' ); ?>
 		<div class="contacts">
-			<h3 class="contacts__title title"><?php the_title(); ?></h3>
+			<h3 class="contacts__title title">Химиков, 34</h3>
 			<div class="contacts-wrap contacts__block">
 				<div class="contacts-item contacts__item contacts-address">
 					<div class="contacts-item__image">
@@ -72,6 +72,78 @@
 		<div class="contacts-map">
 			<div class="map" id="map">
 				<?php echo get_post_meta($post->ID, 'karta', true); ?>
+			</div>
+		</div>	
+	<?php endif; ?>
+		<div class="container">
+		<div class="contacts">
+			<h3 class="contacts__title title">Малунцева, 25</h3>
+			<div class="contacts-wrap contacts__block">
+				<div class="contacts-item contacts__item contacts-address">
+					<div class="contacts-item__image">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/contacts/time.svg" alt="time">
+					</div>
+					<span class="contacts-item__info contacts-item__time">
+						<?php if (get_post_meta($post->ID, 'rezhim_raboty_po_budnyam_2', true)) { echo get_post_meta($post->ID, 'rezhim_raboty_po_budnyam', true); } ?>
+						<br>
+						<?php if (get_post_meta($post->ID, 'rezhim_raboty_po_vyhodnym_2', true)) { echo get_post_meta($post->ID, 'rezhim_raboty_po_vyhodnym', true); } ?>
+					</span>
+				</div>
+				<!-- /.contacts-item -->
+				<?php if (get_post_meta($post->ID, 'adres_2', true)): ?>
+				<div class="contacts-item contacts__item">
+					<div class="contacts-item__image">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/contacts/address.svg" alt="address">
+					</div>
+					<span class="contacts-item__info">
+						<?php echo get_post_meta($post->ID, 'adres_2', true); ?>
+					</span>
+				</div>
+				<!-- /.contacts-item -->
+				<?php endif; ?>
+				
+				
+				<?php if (get_post_meta($post->ID, 'telefon_2', true)): ?>
+				<div class="contacts-item contacts__item">
+					<div class="contacts-item__image">
+						  <img src="<?php echo get_template_directory_uri(); ?>/img/contacts/phone.svg" alt="phone">
+					</div>
+					<span class="contacts-item__info contacts-item__time">					
+						<a href="tel:<?php echo get_post_meta($post->ID, 'telefon_2', true); ?>" onclick="ym(66919612,'reachGoal','call-kontakty'); return true;" class="contacts-item__info contacts-item__phone" >
+							 <?php echo get_post_meta($post->ID, 'telefon_2', true); ?> 
+						</a>
+						<?php if (get_post_meta($post->ID, 'dopolnitelnyj_telefon_2', true)): ?>
+						<br />
+						<a href="tel:<?php echo get_post_meta($post->ID, 'dopolnitelnyj_telefon_2', true); ?>" onclick="return true;" class="contacts-item__info contacts-item__phone">
+							 <?php echo get_post_meta($post->ID, 'dopolnitelnyj_telefon_2', true); ?> 
+						</a>
+						<?php endif; ?>
+					</span>
+				</div>
+				<!-- /.contacts-item -->
+				<?php endif; ?>
+				
+				<?php if (get_post_meta($post->ID, 'telefon_2', true)): ?>
+				<div class="contacts-item contacts__item ">
+					<div class="contacts-item__image contacts-item__mail">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/contacts/mail.svg" alt="mail">
+					</div>
+					<a href="mailto:<?php echo get_post_meta($post->ID, 'e-mail_2', true); ?>" class="contacts-item__info" target="_blank">
+						<?php echo get_post_meta($post->ID, 'e-mail_2', true); ?>
+					</a>
+				</div>
+				<!-- /.contacts-item -->
+				<?php endif; ?>
+			</div>
+			<!-- /.contacts-wrap -->
+		</div>
+		<!-- /.contacts -->
+	</div>
+	<!-- /.container -->
+	<?php if (get_post_meta($post->ID, 'karta_2', true)): ?>
+		<div class="contacts-map">
+			<div class="map" id="map">
+				<?php echo get_post_meta($post->ID, 'karta_2', true); ?>
 			</div>
 		</div>	
 	<?php endif; ?>

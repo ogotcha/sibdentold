@@ -28,4 +28,13 @@
 
 </head>
 <body <?php body_class(); ?>>
+	<div class="popup" id="sale-form">
+        <div class="popup__close">
+            &times;
+        </div>
+
+        <div class="popup-form">
+            <?php echo do_shortcode('[contact-form-7 id="512" title="Запись с главной"]'); ?>
+        </div>
+    </div>
     <div class="wrap">

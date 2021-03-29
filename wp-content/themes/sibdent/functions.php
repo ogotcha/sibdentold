@@ -4,6 +4,7 @@ require_once (TEMPLATEPATH . '/library/sale.php');
 require_once (TEMPLATEPATH . '/library/review.php');
 require_once (TEMPLATEPATH . '/library/price.php');
 require_once (TEMPLATEPATH . '/library/doctor.php');
+require_once (TEMPLATEPATH . '/library/doctor2.php');
 require_once (TEMPLATEPATH . '/library/service.php');
 require_once (TEMPLATEPATH . '/library/options.php');
 
