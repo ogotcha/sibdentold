@@ -29,7 +29,7 @@
             </div>
 						
             <div class="popup-form">
-			<? echo do_shortcode('[contact-form-7 id="283" title="Запись"]'); ?>
+			<?php echo do_shortcode('[contact-form-7 id="283" title="Запись"]'); ?>
             </div>
         </div>
                         <div class="stocks-single__more">

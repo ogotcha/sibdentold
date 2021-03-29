@@ -1,4 +1,4 @@
-<?
+<?php
 // Подключаем посттайпы и опции
 require_once (TEMPLATEPATH . '/library/sale.php');
 require_once (TEMPLATEPATH . '/library/review.php');
